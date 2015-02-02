@@ -142,13 +142,15 @@ data Point = Point
 
 Record syntax should never be used within a sum type.
 
-## Spacing
+## Operators
 
 Always space out multi-operator expressions.
 
 ```haskell
 foo = x y * z * y
 ```
+
+## Collections
 
 Always follow `,` in collections with a space.
 
@@ -162,6 +164,18 @@ In record updates, do not separate field and value with spaces.
 
 ```haskell
 let rec' = rec{a=1, b=2, c=3}
+```
+
+Long collections should vertically align by the `[`, `]`, and `,` at
+four spaces with the `]` dangling.
+
+```haskell
+let x =
+    [ 1
+    , 2
+    , 3
+    , 4
+    ]
 ```
 
 
